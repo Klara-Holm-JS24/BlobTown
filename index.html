@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blobtown</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/main.js" defer></script>
+    <link rel="shortcut icon" href="img/blob.png" type="image/x-icon">
+</head>
+<body>
+    <header><h1>Blob is <span id="title-status">...</span></h1></header>
+    <main>
+        <section class="blob-display">
+            <img id="blob" src="img/blob.png" alt="purple blob"/>
+        </section>
+        <section class="status-section">
+            <p>Hunger: </p>
+            <p>Energy: </p>
+            <p>Happiness: </p>
+            <p>Money:</p>
+            <div class="status-bar">
+                <div class="status-fill" id="hunger-fill"></div>
+            </div>
+            <div class="status-bar">
+                <div class="status-fill" id="energy-fill"></div>
+            </div>
+            <div class="status-bar">
+                <div class="status-fill" id="happiness-fill"></div>
+            </div>
+            <p id="money"></p>
+        </section>
+        <section class="gameplay-buttons">
+            <button id="feed-button">Feed Blob</button>
+            <button id="sleep-button">Let Blob Sleep</button>
+            <button id="play-button">Play With Blob</button>
+        </section>
+        <section class="setting-buttons">
+            <button id="pause-button">Pause Game</button>
+            <button id="speed-button">Game speed: 1</button>
+            <button id="idle-button">Idle Mode: Off</button>
+        </section>
+        <section class="message-window">
+            <p id="message">Nothing to see here...</p>
+        </section>
+    </main>
+    <div class="dimmer hidden">
+        <section class="modal hidden" id="welcome-back-modal">
+            <h2>Welcome Back!</h3>
+            <p>You've been away for <span id="time-display"></span>s. Blob missed you a lot during that time. Luckily, time moves a lot slower when you're away (something something quantum mechanics), so Blob should still be fine.</p>
+            <button id="remove-modal-button">Got It!</button>
+        </section>
+    </div>
+</body>
+</html>
